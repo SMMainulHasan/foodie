@@ -30,19 +30,24 @@ const recipe = recipes => {
       const div = document.createElement('div');
       const recipeId = recipe.idMeal;
       div.className = "recipe";
-      div.onClick ="ingredient()";
+      let mealId = recipe.idMeal;
+      // console.log(mealId);
       const recipeDiv = `
+      <div onclick="detail(${mealId})">
       <img src= "${recipe.strMealThumb}"></img>
       <h6 class="d-flex justify-content-center">${recipe.strMeal}</h6>
+      </div>
       `;
       div.innerHTML = recipeDiv;
       displayRecipes.appendChild(div);
-      //open Ingredient by meal id--
-      
-      
     });
   }
-  
 };
 
-
+//open Ingredient by meal id--
+function detail(meal){
+  const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal}`;
+  fetch(url)
+  .then(res => res.json())
+  .then(data => console.log(data))
+};
