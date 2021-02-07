@@ -18,11 +18,13 @@
                 <div class="input-group">
                     <input id="searchInput" type="text" class="form-control" placeholder="Username" aria-label="Username"
                         aria-describedby="basic-addon1">
-                    <button onclick="searchBtn(), clearContent()" class="input-group-text" id="basic-addon1">Search</button>
+                    <button onclick="searchBtn(), clearContent('display-recipes')" class="input-group-text" id="basic-addon1">Search</button>
                 </div>
             </div>
         </nav>
         <!--Search result Content -->
+        <div id="ingredient-info">
+        </div>
         <div id="display-recipes">
         </div>
     </main>
