@@ -20,8 +20,11 @@ body{
     
 }
 .ingredient-detail{
-    margin-left: 30px;
+    margin-left: 50px;
     margin-bottom: 40px;
+}
+.ingredient-detail h2{
+    color: lightsalmon;
 }
 .ingredient img{
     height: 400px;

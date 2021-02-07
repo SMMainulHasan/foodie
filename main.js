@@ -60,26 +60,28 @@ const ingredientInfo = (data) => {
     <div class="ingredient-detail">
     <h2 class="d-flex justify-content-center">${data.meals[0].strMeal}</h2>
     <h6>Ingredients</h6>
-    <p>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}</p>
-    <p>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}</p>
-    <p>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}</p>
-    <p>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}</p>
-    <p>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}</p>
-    <p>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}</p>
-    <p>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}</p>
-    <p>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}</p>
-    <p>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}</p>
-    <p>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}</p>
-    <p>${data.meals[0].strMeasure11} ${data.meals[0].strIngredient11}</p>
-    <p>${data.meals[0].strMeasure12} ${data.meals[0].strIngredient12}</p>
-    <p>${data.meals[0].strMeasure13} ${data.meals[0].strIngredient13}</p>
-    <p>${data.meals[0].strMeasure14} ${data.meals[0].strIngredient14}</p>
-    <p>${data.meals[0].strMeasure15} ${data.meals[0].strIngredient15}</p>
-    <p>${data.meals[0].strMeasure16} ${data.meals[0].strIngredient16}</p>
-    <p>${data.meals[0].strMeasure17} ${data.meals[0].strIngredient17}</p>
-    <p>${data.meals[0].strMeasure18} ${data.meals[0].strIngredient18}</p>
-    <p>${data.meals[0].strMeasure19} ${data.meals[0].strIngredient19}</p>
-    <p>${data.meals[0].strMeasure20} ${data.meals[0].strIngredient20}</p>
+    <ul>
+    <li>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}</li>
+    <li>${data.meals[0].strMeasure2} ${data.meals[0].strIngredient2}</li>
+    <li>${data.meals[0].strMeasure3} ${data.meals[0].strIngredient3}</li>
+    <li>${data.meals[0].strMeasure4} ${data.meals[0].strIngredient4}</li>
+    <li>${data.meals[0].strMeasure5} ${data.meals[0].strIngredient5}</li>
+    <li>${data.meals[0].strMeasure6} ${data.meals[0].strIngredient6}</li>
+    <li>${data.meals[0].strMeasure7} ${data.meals[0].strIngredient7}</li>
+    <li>${data.meals[0].strMeasure8} ${data.meals[0].strIngredient8}</li>
+    <li>${data.meals[0].strMeasure9} ${data.meals[0].strIngredient9}</li>
+    <li>${data.meals[0].strMeasure10} ${data.meals[0].strIngredient10}</li>
+    <li>${data.meals[0].strMeasure11} ${data.meals[0].strIngredient11}</li>
+    <li>${data.meals[0].strMeasure12} ${data.meals[0].strIngredient12}</li>
+    <li>${data.meals[0].strMeasure13} ${data.meals[0].strIngredient13}</li>
+    <li>${data.meals[0].strMeasure14} ${data.meals[0].strIngredient14}</li>
+    <li>${data.meals[0].strMeasure15} ${data.meals[0].strIngredient15}</li>
+    <li>${data.meals[0].strMeasure16} ${data.meals[0].strIngredient16}</li>
+    <li>${data.meals[0].strMeasure17} ${data.meals[0].strIngredient17}</li>
+    <li>${data.meals[0].strMeasure18} ${data.meals[0].strIngredient18}</li>
+    <li>${data.meals[0].strMeasure19} ${data.meals[0].strIngredient19}</li>
+    <li>${data.meals[0].strMeasure20} ${data.meals[0].strIngredient20}</li>
+    </ul>
     </div>
   `;
   div.innerHTML = infoDiv;
