@@ -16,9 +16,9 @@
         <nav class="navbar navbar-light bg-light search">
             <div class="container-fluid">
                 <div class="input-group">
-                    <input id="searchInput" type="text" class="form-control" placeholder="Username" aria-label="Username"
+                    <input id="searchInput" type="text" class="form-control" placeholder="Search meal..." aria-label="Username"
                         aria-describedby="basic-addon1">
-                    <button onclick="searchBtn(), clearContent('display-recipes')" class="input-group-text" id="basic-addon1">Search</button>
+                    <button onclick="searchBtn(), clearContent('display-recipes'), clearContent('ingredient-info')" class="input-group-text" id="basic-addon1">Search</button>
                 </div>
             </div>
         </nav>

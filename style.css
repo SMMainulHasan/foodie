@@ -1,3 +1,6 @@
+body{
+    background-color: #f8f9fa;
+}
 .search{
     margin: 30px 30%;
 }
@@ -11,7 +14,23 @@
 }
 .recipe{
     /* border: 1px solid red; */
-    background-color: aliceblue;
+    background-color: lightgray;
     border-radius: 15px;
+    overflow: hidden;
     
+}
+.ingredient-detail{
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.ingredient img{
+    height: 400px;
+    /* z-index: -1; */
+    overflow: hidden;
+}
+.ingredient{
+    height: 400px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    overflow: auto;
 }

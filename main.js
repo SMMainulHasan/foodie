@@ -4,7 +4,7 @@ function clearContent(place) {
 };
 
 //Call API //Search meal by name--
-function searchBtn() {
+const searchBtn = () => {
   const searchInput = document.getElementById('searchInput').value;
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`;
   fetch(url)
@@ -54,9 +54,10 @@ const ingredientInfo = (data) => {
   clearContent('ingredient-info')
   const displayIngredient = document.getElementById('ingredient-info');
   const div = document.createElement('div');
-  div.className = "ingredient";
+  div.className = "ingredient d-flex";
   const infoDiv = `
     <img src= "${data.meals[0].strMealThumb}"></img>
+    <div class="ingredient-detail">
     <h2 class="d-flex justify-content-center">${data.meals[0].strMeal}</h2>
     <h6>Ingredients</h6>
     <p>${data.meals[0].strMeasure1} ${data.meals[0].strIngredient1}</p>
@@ -79,6 +80,7 @@ const ingredientInfo = (data) => {
     <p>${data.meals[0].strMeasure18} ${data.meals[0].strIngredient18}</p>
     <p>${data.meals[0].strMeasure19} ${data.meals[0].strIngredient19}</p>
     <p>${data.meals[0].strMeasure20} ${data.meals[0].strIngredient20}</p>
+    </div>
   `;
   div.innerHTML = infoDiv;
   displayIngredient.appendChild(div);
