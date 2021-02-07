@@ -1,0 +1,17 @@
+.search{
+    margin: 30px 30%;
+}
+#display-recipes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.recipe img{
+    width: 100%;
+}
+.recipe{
+    /* border: 1px solid red; */
+    background-color: aliceblue;
+    border-radius: 15px;
+    
+}
