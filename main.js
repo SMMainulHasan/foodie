@@ -45,7 +45,7 @@ const recipe = recipes => {
 };
 
 //open Ingredient by meal id--
-function detail(meal){
+const detail = meal =>{
   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal}`;
   fetch(url)
   .then(res => res.json())
